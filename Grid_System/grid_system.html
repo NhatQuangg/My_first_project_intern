@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./grid_system.css">
+    <style>
+        /* body {
+            margin: 0;
+        }
+        .container {
+            background-color: orange;
+            text-align: center;
+        }
+        h1 {
+            padding: 100px 0;
+            font-size: 100px;
+            color: #fff;
+            margin: 0;
+        } */
+
+        /* * {
+        box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .course-item {
+            background-color: orange;
+            height: 260px;
+        }
+        h1 {
+            color: #fff;
+            line-height: 260px;
+            margin: 0;
+        }
+        @media (max-width: 1023px) {
+            .course-item {
+                margin-top: 16px;
+            }
+        }
+        .category {
+            background-color: green;
+            height: 260px;
+        }
+        ul {
+            /* vì ul mặc định có margin top nên bị đẩy xuống */
+            /* margin-top: 0;
+        }  */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: antiquewhite;
+            min-height: 100vh;
+        }
+        .my-column {
+            text-align: center;
+            min-height: 50vh;
+            background-color: orange;
+        }
+
+    </style>
+</head>
+
+    <!-- 
+        Column: .col
+        Prefit class:
+            - c - mobile 
+            - m - table (medium)
+            - l - pc (large)
+    -->
+
+<body>
+    <div class="grid wide container">
+        <!-- <h1>GRID SYSTEM</h1> -->
+        <div class="row">
+            <!-- <h1>Columns 1</h1>
+            <h1>Columns 2</h1>
+            <h1>Columns 3</h1> -->
+
+            <!-- 
+                lấy 12 cột chia cho số cột muốn hiển thị
+                thì sẽ biết đc dùng  'l-m-c- bao nhiêu'
+                VD:
+                    (PC) muốn hiển thị 4 cột thì 12/4 = 3 
+                    thì ta dùng 'l-3' 
+                    (tablet) và (mobile) cũng làm tương tự
+            -->
+
+                <!-- <div class="col l-3 m-6 c-12 ">
+                    <div class="course-item">
+                        <h1>Course 1</h1>
+                    </div>
+                </div>
+
+                <div class="col l-3 m-6 c-12 ">
+                    <div class="course-item">
+                        <h1>Course 2</h1>
+                    </div>
+                </div>
+
+                <div class="col l-3 m-6 c-12 ">
+                    <div class="course-item">
+                        <h1>Course 3</h1>
+                    </div>
+                </div>
+
+                <div class="col l-3 m-6 c-12 ">
+                    <div class="course-item">
+                        <h1>Course 4</h1>
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="col l-3 m-0 c-0">
+                    <div class="category">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML CSS</li>
+                            <li>PHP</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <!-- <div class="col l-9 m-12 c-12">
+                    <div class="row">  -->
+                        <!-- row là 100%  -->
+                        <!-- đưa thêm 1 class row để cho nó thành chiều ngang -->
+                        <!-- muốn hiển thị 3 khóa học chiếm 100% trên PC thì phải là 'l-4' 12/3 -->
+                        <!-- muốn hiển thị 2 khóa học chiếm 100% trên tablet thì phải là 'l-6' 12/2 -->
+                        <!-- <div class="col l-4 m-6 c-12 ">
+                            <div class="course-item">
+                                <h1>Course 1</h1>
+                            </div>
+                        </div>
+        
+                        <div class="col l-4 m-6 c-12 ">
+                            <div class="course-item">
+                                <h1>Course 2</h1>
+                            </div>
+                        </div>
+        
+                        <div class="col l-4 m-6 c-12 ">
+                            <div class="course-item">
+                                <h1>Course 3</h1>
+                            </div>
+                        </div>                      
+                    </div>
+                </div> -->
+            
+            <!-- l-o-3: đứng từ vị trí số 3 (bắt đầu ở số 3) trái 3 phải 3 thì giữa còn lại 6 -->
+            <!-- <div class="col l-6 l-o-3 m-8 m-o-2 c-12">
+                <div class="my-column">
+                    <h1>Column 1</h1>
+                 </div> -->
+
+ 
+            <div class="col l-3 m-3 l-o-6 m-o-3">
+                <div class="my-column">
+                    <h1>Column 1</h1>
+                </div>               
+            </div>    
+            <div class="col l-3 m-3">
+                <div class="my-column">
+                    <h1>Column 1</h1>
+                </div>               
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
